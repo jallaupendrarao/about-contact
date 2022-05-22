@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>MedLIFE - Live Healthy, Live Free</title>
+
+</head>
+<body>
+
+    
+    <div class="container mb-4">
+        <div class="row">
+            <div class="col-md-6">
+                <form action="SEND ADDRESS" id="ft-form" method="POST" accept-charset="UTF-8">
+                    <fieldset>
+                        <legend>For person</legend>
+                        <label>
+          Name
+          <input type="text" name="name" required />
+        </label>
+                        <div class="two-cols">
+                            <label>
+            Email address
+            <input type="email" name="email" required />
+          </label>
+                            <label>
+            Phone number
+            <input type="tel" name="phone" />
+          </label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Appointment request</legend>
+                        <div class="two-cols">
+                            <label>
+            Date
+            <input type="date" name="Appointment request" required />
+          </label>
+                            <div class="inline">
+                                <label>
+              <input type="hidden" name="Morning desired" value="no" />
+              <input type="checkbox" name="Morning desired" value="yes" />
+              Morning
+            </label>
+                                <label>
+              <input type="hidden" name="Afternoon desired" value="no" />
+              <input type="checkbox" name="Afternoon desired" value="yes" />
+              Afternoon
+            </label>
+                            </div>
+                        </div>
+                        <p>Confirmation requested by</p>
+                        <div class="inline">
+                            <label>
+            <input
+              type="radio"
+              name="Confirmation requested by"
+              value="email"
+              checked
+            />
+            Email
+          </label>
+                            <label>
+            <input
+              type="radio"
+              name="Confirmation requested by"
+              value="phone"
+            />
+            Phone call
+          </label>
+                        </div>
+                    </fieldset>
+                    <div class="btns">
+                        <input type="text" name="_gotcha" value="" style="display: none" />
+                        <input type="submit" value="Submit request" />
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-md-6">
+                <h3>Why Appointment With Us</h3>
+                <div class="why-appoint-cont my-4">
+                    <h5>24/7 Hours Available</h5>
+                    <p class="para-color why-appoint-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas expedita eligendi est aspernatur eum.</p>
+                </div>
+                <div class="why-appoint-cont">
+                    <h5>Experienced Staff Available</h5>
+                    <p class="para-color why-appoint-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas expedita eligendi est.</p>
+                </div>
+                <div class="why-appoint-cont my-4">
+                    <h5>Low Fees & Price</h5>
+                    <p class="para-color why-appoint-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas expedita eligendi est aspernatur eum.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    
+
+
+  
+
+    <!-- Footer section  -->
+    <footer class="footer" id="footer">
+        <div class="container container-fluid p-5">
+            <div class="row footer-content">
+                <div class="footer-column col-md-4 col-sm-5">
+                    <h3>About Us</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nesciunt dolorem ipsam saepe ex, quisquam sapiente repellat quo natus alias!
+                    </p>
+                </div>
+                <div class="footer-column col-md-4 col-sm-5">
+                    <h3>Quick Links</h3>
+
+
+                    <ul>
+                        <li>Home</li>
+                        <li>Services</li>
+                        <li>Appointment</li>
+                    </ul>
+                </div>
+                <div class="footer-column col-md-4 col-sm-5">
+                    <h3>Follow Us</h3>
+                </div>
+            </div>
+        </div>
+
+        <hr />
+        <span class="copyright text-center d-block">© Copyright MedLIFE. All Rights Reserved</span
+      >
+    </footer>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
